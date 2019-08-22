@@ -1,6 +1,7 @@
 # postcards
 
-> What will your holiday memories be like in the future with
+> What will your holiday memories be like in the future with the current
+> rate of climate change?
 
 ## Build Setup
 

@@ -15,6 +15,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  padding: 2em;
+  background: #333;
+  color: #ddd;
 }
 
 *,
@@ -24,32 +27,49 @@ html {
   margin: 0;
 }
 
-.button--green {
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.actions {
+  padding-top: 15px;
+}
+
+.button {
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border-radius: 2px;
+  background: #444;
+  color: #eee;
   text-decoration: none;
   padding: 10px 30px;
+  box-shadow: 0 0 1rem black;
+  border: none;
+  transition: background 250ms, box-shadow 250ms;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.button:hover {
+  background: #555;
+  box-shadow: 0 0 3rem black;
 }
 </style>
